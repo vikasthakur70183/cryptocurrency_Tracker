@@ -1,0 +1,19 @@
+/* Footer.css */
+
+.Footer {
+    position: relative;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Footer p {
+    margin: 0;
+    font-size: 14px;
+}
