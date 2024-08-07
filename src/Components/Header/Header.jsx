@@ -14,11 +14,11 @@ function Header() {
     };
 
     // Function to handle logout
-    
+
 
     // Define arrays of objects for dropdown menu links
     const Links = [
-        { to: '/home', text: 'Home', onClick: () => setIsMenuOpen(false), className: 'links' },
+        { to: '/', text: 'Home', onClick: () => setIsMenuOpen(false), className: 'links' },
         { to: '/Converter', text: 'Crypto Conveter', onClick: () => setIsMenuOpen(false), className: 'links' },
         // { to: '/profile', text: 'Profile', onClick: () => setIsMenuOpen(false), className: 'links' },
     ];
@@ -28,7 +28,7 @@ function Header() {
             <header>
                 <div className="navbar">
                     <div className="logo">
-                        <img className="logo"  alt="Crpto" />
+                        <img className="logo" alt="Crpto" />
                     </div>
                     <ul className="links">
                         {Links.map((link) => (
