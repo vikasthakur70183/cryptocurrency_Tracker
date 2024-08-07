@@ -93,10 +93,10 @@ const CryptoConverter = () => {
         <div className='dropdown'>
           <AsyncSelect
             cacheOptions
-            loadOptions={loadFiatOptions}
+            loadOptions={loadCryptoOptions}
             onChange={setFromCurrency}
             formatOptionLabel={formatOptionLabel}
-            defaultOptions={fiatOptions}
+            defaultOptions={cryptoOptions}
           />
 
           <AsyncSelect
@@ -111,7 +111,7 @@ const CryptoConverter = () => {
       <button onClick={handleConversion}>Convert</button>
 
       {convertedAmount && (
-        <div>
+        <div className='converted_amount'>
           <h2>Converted Amount:</h2>
           <p>{convertedAmount}</p>
         </div>
